@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - SpartanVPN</title>
+     
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-green-900 text-white p-5">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+        <img src="image.png" alt="SpartanVPN Logo" class="h-12">
+        <h1 class="font-bold text-3xl">SpartanVPN</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                <li><a href="index.html#about" class="hover:text-green-300">About</a></li>
+                <li><a href="index.html#features" class="hover:text-green-300">Features</a></li>
+                <li><a href="index.html#pricing" class="hover:text-green-300">Pricing</a></li>
+                <li><a href="index.html#contact" class="hover:text-green-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Payment Details</h2>
+        <form action="process_payment.php" method="post" class="max-w-xl mx-auto bg-white p-6 shadow rounded">
+            <div class="mb-4">
+                <label for="plan" class="block text-gray-700 text-sm font-bold mb-2">Select Plan</label>
+                <select id="plan" name="plan" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                    <option value="basic">Basic - $9.99/month</option>
+                    <option value="premium">Premium - $14.99/month</option>
+                    <option value="ultimate">Ultimate - $19.99/month</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="cardName" class="block text-gray-700 text-sm font-bold mb-2">Name on Card</label>
+                <input type="text" id="cardName" name="cardName" placeholder="Full Name" required class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="cardNumber" class="block text-gray-700 text-sm font-bold mb-2">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label for="cardExpiry" class="block text-gray-700 text-sm font-bold mb-2">Expiry Date</label>
+                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div>
+                    <label for="cardCVC" class="block text-gray-700 text-sm font-bold mb-2">CVC</label>
+                    <input type="text" id="cardCVC" name="cardCVC" placeholder="CVC" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <button type="submit" class="bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Pay Now</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer class="bg-gray-800 text-white text-center p-4">
+    <div class="container mx-auto">
+        <p>&copy; 2024 SpartanVPN. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

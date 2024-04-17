@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpartanVPN Home</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-green-900 text-white p-5">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <div class="container mx-auto flex justify-between items-center">
+        <img src="image.png" alt="SpartanVPN Logo" class="h-12">
+        <h1 class="font-bold text-3xl">SpartanVPN</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-green-300">About</a></li>
+                <li><a href="#features" class="hover:text-green-300">Features</a></li>
+                <li><a href="#pricing" class="hover:text-green-300">Pricing</a></li>
+                <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="banner" class="text-center py-20 bg-green-100">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-semibold mb-2">Protect Your Privacy with SpartanVPN</h2>
+        <p class="mb-4">Stay safe and untraceable on the web. Get access to fast and secure VPN servers worldwide with premium subscriptions.</p>
+        <a href="#pricing" class="bg-green-800 text-white px-6 py-2 inline-block rounded hover:bg-green-700">Get Started</a>
+    </div>
+</section>
+
+<section id="about" class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-3">About SpartanVPN</h2>
+        <p>SpartanVPN is dedicated to providing you with the best VPN service to protect your online privacy. With our encrypted VPN servers located worldwide, you can browse the internet securely and access geo-restricted content.</p>
+    </div>
+</section>
+
+<section id="features" class="py-12 bg-white">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-3">Features</h2>
+        <ul class="list-disc pl-5 space-y-2">
+            <li>Secure and encrypted connection</li>
+            <li>Access to servers worldwide</li>
+            <li>Bypass censorship and geo-restrictions</li>
+            <li>Protect your online activities from hackers and spyware</li>
+        </ul>
+    </div>
+</section>
+
+<section id="pricing" class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-6">Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-2xl font-semibold mb-2">Basic</h3>
+                <p class="text-lg">$9.99/month</p>
+                <p>Access to 10 servers</p>
+                <p class="my-2">Including:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Brazil</li>
+                    <li>Australia</li>
+                    <li>Canada</li>
+                    <li>Russia</li>
+                    <li>China</li>
+                    <li>Mexico</li>
+                    <li>United States</li>
+                    <li>UK</li>
+                    <li>Thailand</li>
+                    <li>India</li>
+                </ul>
+                <a href="pay.html" class="mt-3 inline-block bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Buy Now</a>
+            </div>
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-2xl font-semibold mb-2">Premium</h3>
+                <p class="text-lg">$14.99/month</p>
+                <p>Access to 50 servers</p>
+                <a href="pay.html" class="mt-3 inline-block bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Buy Now</a>
+            </div>
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-2xl font-semibold mb-2">Ultimate</h3>
+                <p class="text-lg">$19.99/month</p>
+                <p>Access to all servers</p>
+                <a href="pay.html" class="mt-3 inline-block bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-3">Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to contact us.</p>
+        <form action="contact.php" method="post" class="space-y-4">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 border border-gray-300 rounded">
+            <textarea name="message" placeholder="Your Message" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+            <button type="submit" class="bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-gray-800 text-white text-center p-4">
+    <div class="container mx-auto">
+        <p>&copy; 2024 SpartanVPN. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
